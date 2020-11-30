@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+<h1>Welcome to Crystal Videos</h1><br><br>
+<a href = "/uploader/upload"><b>Click here to upload a new video</b></a> <br><br>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=200, initial-scale=0.30">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>video player</title>
+</head>
+
+<body>
+{% for video in videos %}
+<video src="http://localhost:3000/{{video.video_file}}" controls></video> <br><br>
+{% endfor %}
+</body>
+</html>
